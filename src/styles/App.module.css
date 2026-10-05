@@ -1,0 +1,157 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundEffects {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 75%
+  );
+}
+
+.glowOne {
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  top: -300px;
+  left: -280px;
+
+  border-radius: 50%;
+
+  background: rgba(100, 76, 255, 0.09);
+
+  filter: blur(100px);
+}
+
+.glowTwo {
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  right: -250px;
+  top: 350px;
+
+  border-radius: 50%;
+
+  background: rgba(48, 226, 235, 0.06);
+
+  filter: blur(110px);
+}
+
+.main {
+  width: min(1440px, calc(100% - 64px));
+  margin: 0 auto;
+
+  padding: 40px 0 110px;
+}
+
+.introduction {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  color: var(--cyan);
+}
+
+.introduction h2 {
+  margin: 0 0 9px;
+
+  font-family: var(--font-title);
+
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+
+  letter-spacing: -0.04em;
+}
+
+.introduction p {
+  max-width: 680px;
+
+  margin: 0;
+
+  line-height: 1.75;
+
+  color: var(--text-secondary);
+}
+
+.caseCounter {
+  display: flex;
+  align-items: baseline;
+
+  gap: 9px;
+
+  color: var(--text-muted);
+}
+
+.caseCounter strong {
+  font-family: var(--font-title);
+
+  font-size: 2.5rem;
+
+  color: var(--text-primary);
+}
+
+.caseCounter span {
+  font-size: 0.8rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: min(100% - 32px, 1440px);
+
+    padding-top: 25px;
+  }
+
+  .introduction {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+}

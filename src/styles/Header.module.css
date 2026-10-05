@@ -1,0 +1,187 @@
+.header {
+  width: min(1440px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 88px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  font-family: var(--font-title);
+  font-weight: 700;
+
+  letter-spacing: -0.04em;
+}
+
+.brand > span {
+  font-size: 1.1rem;
+}
+
+.brand > span span {
+  color: var(--cyan);
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(120, 243, 255, 0.25);
+  border-radius: 13px;
+
+  background: rgba(120, 243, 255, 0.07);
+
+  color: var(--cyan);
+
+  box-shadow:
+    inset 0 0 25px rgba(120, 243, 255, 0.04),
+    0 0 30px rgba(120, 243, 255, 0.04);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  color: var(--text-secondary);
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #64f0c1;
+
+  box-shadow: 0 0 12px rgba(100, 240, 193, 0.7);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 100px 20px 90px;
+
+  text-align: center;
+}
+
+.iconBadge {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 13px;
+
+  margin-bottom: 27px;
+
+  border: 1px solid rgba(155, 124, 255, 0.2);
+  border-radius: 100px;
+
+  background: rgba(155, 124, 255, 0.065);
+
+  color: #c6b8ff;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-family: var(--font-title);
+
+  font-size: clamp(3.4rem, 9vw, 7.6rem);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.075em;
+}
+
+.hero h1 span {
+  color: transparent;
+
+  background: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #b5b3ff 45%,
+    #77f5ff 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  text-shadow: 0 0 60px rgba(128, 142, 255, 0.16);
+}
+
+.subtitle {
+  margin: 32px 0 0;
+
+  font-family: var(--font-title);
+
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+
+  color: #ced3e2;
+}
+
+.description {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.security {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 26px;
+
+  color: var(--text-muted);
+
+  font-size: 0.73rem;
+}
+
+@media (max-width: 800px) {
+  .header {
+    width: min(100% - 32px, 1440px);
+  }
+
+  .nav {
+    height: 72px;
+  }
+
+  .hero {
+    padding: 75px 0 65px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.6rem, 17vw, 6rem);
+  }
+}

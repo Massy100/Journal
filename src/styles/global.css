@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  /*
+  =========================================================
+  PERSONALIZACIÓN RÁPIDA DE COLORES
+  =========================================================
+
+  Cambia estas variables para modificar prácticamente
+  toda la apariencia del proyecto.
+  */
+
+  --background: #05070d;
+  --background-secondary: #080b14;
+
+  --surface: rgba(14, 18, 31, 0.72);
+  --surface-light: rgba(255, 255, 255, 0.055);
+
+  --text-primary: #f4f7ff;
+  --text-secondary: #969db2;
+  --text-muted: #646c80;
+
+  --cyan: #78f3ff;
+  --cyan-soft: rgba(120, 243, 255, 0.15);
+
+  --violet: #9b7cff;
+  --violet-soft: rgba(155, 124, 255, 0.17);
+
+  --pink: #ff70b8;
+
+  --border: rgba(255, 255, 255, 0.09);
+
+  --danger: #ff738a;
+
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 28px;
+
+  --font-title: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      rgba(114, 93, 255, 0.08),
+      transparent 30%
+    ),
+    #05070d;
+
+  color: var(--text-primary);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(120, 243, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060810;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid #060810;
+  border-radius: 20px;
+  background: #252b3d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343c52;
+}
