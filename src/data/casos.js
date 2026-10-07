@@ -44,36 +44,57 @@ para conocer cuántos casos existen.
 
 ===========================================================
 */
+import caso1 from "../img/caso1.jpg";
 
 export const casos = [
   {
     id: "caso-1",
 
-    nombre: "Caso Placeholder 1",
+    nombre: "Paris Hilton: Cazando a Mr. Deepfake",
 
-    /*
-      Puedes sustituir esta URL por:
-      - Una URL externa
-      - Una imagen alojada en /public
-      - Ejemplo: "/images/caso-1.jpg"
-    */
-    imagen:
-      "https://placehold.co/1200x800/101426/8df8ff?text=Caso+Placeholder+1",
+    imagen: caso1,
 
-    fecha: "Fecha por definir",
+    fecha: "22 de enero de 2026",
 
     involucrados: [
-      "Involucrado 1 - Pendiente",
-      "Involucrado 2 - Pendiente",
+      "Paris Hilton",
+      "Alexandria Ocasio-Cortez",
+      "Congreso de Estados Unidos"
     ],
 
+    fuentes: [
+    {
+      nombre:
+        "El País - Paris Hilton recuerda la filtración de su vídeo sexual para promover una ley contra el deepfake",
+      url: "https://elpais.com/gente/2026-01-23/paris-hilton-recuerda-la-filtracion-de-su-video-sexual-para-promover-una-ley-contra-el-deepfake-lo-llamaron-escandalo-pero-fue-abuso.html",
+    },
+
+    {
+      nombre:
+        "Euronews - Paris Hilton se suma a la lucha contra los deepfakes",
+      url: "https://es.euronews.com/next/2026/01/23/paris-hilton-se-suma-a-la-lucha-contra-los-deepfakes",
+    },
+
+    {
+      nombre:
+        "Infobae - Paris Hilton revive el trauma de su video filtrado y exige justicia contra los deepfakes",
+      url: "https://www.infobae.com/entretenimiento/2026/01/23/paris-hilton-revive-el-trauma-de-su-video-filtrado-y-exige-justicia-ni-siquiera-habia-palabras-para-lo-que-me-hicieron/",
+    },
+  ],
+
     descripcion:
-      "Descripción pendiente de investigación. Aquí se documentará el contexto del deepfake, cómo fue detectado, dónde circuló y cuál fue su posible impacto.",
+      "Paris Hilton ha enfrentado durante años problemas relacionados con la exposición pública, la privacidad y la difusión de contenido íntimo sin consentimiento.\n\n" +
 
+      "En 2003 se difundió un video íntimo suyo sin su autorización, hecho que posteriormente describió como una forma de abuso. Años más tarde, documentales como The American Meme y This Is Paris mostraron aspectos más personales de su vida y ayudaron a reforzar su participación en campañas relacionadas con los derechos de las víctimas.\n\n" +
+
+      "En enero de 2026, Hilton denunció públicamente la circulación de imágenes sexuales falsas generadas con inteligencia artificial y afirmó que existían más de 100,000 deepfakes explícitos utilizando su imagen.\n\n" +
+
+      "Su caso muestra cómo la inteligencia artificial puede ampliar problemas ya existentes de privacidad y consentimiento, permitiendo crear contenido íntimo falso a partir de fotografías o imágenes públicas de una persona.",
+    
     resolucion:
-      "Resolución pendiente. Esta sección deberá actualizarse cuando exista información verificable sobre las consecuencias, acciones tomadas o conclusión del caso.",
+      "Paris Hilton apoyó públicamente la Ley DEFIANCE, una propuesta orientada a ofrecer herramientas legales a las víctimas de deepfakes sexuales creados o distribuidos sin consentimiento. El caso se convirtió en parte del debate sobre inteligencia artificial, consentimiento, privacidad y responsabilidad digital.",
 
-    estado: "Placeholder",
+    estado: "Documentado"
   },
 
   {

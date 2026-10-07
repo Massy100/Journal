@@ -125,13 +125,13 @@ function CaseCard({
                 duration: 0.45,
                 ease: [0.16, 1, 0.3, 1],
               },
-
               opacity: {
                 duration: 0.3,
               },
             }}
           >
             <div className={styles.detailsInner}>
+              {/* RESUMEN SUPERIOR */}
               <div className={styles.metadataGrid}>
                 <div className={styles.metadataCard}>
                   <div className={styles.metadataIcon}>
@@ -153,47 +153,94 @@ function CaseCard({
                     <span>Involucrados</span>
 
                     <strong>
-                      {caseItem.involucrados.length}{" "}
-                      registrados
+                      {caseItem.involucrados.length} registrados
                     </strong>
                   </div>
                 </div>
               </div>
 
-              <div className={styles.section}>
-                <div className={styles.sectionHeading}>
-                  <FileSearch size={20} />
+              {/* CONTENIDO PRINCIPAL */}
+              <div className={styles.contentGrid}>
+                {/* COLUMNA IZQUIERDA */}
+                <div
+                  className={`${styles.section} ${styles.descriptionSection}`}
+                >
+                  <div className={styles.sectionHeading}>
+                    <FileSearch size={20} />
 
-                  <h4>Descripción del caso</h4>
+                    <h4>Descripción del caso</h4>
+                  </div>
+
+                  <p>{caseItem.descripcion}</p>
                 </div>
 
-                <p>{caseItem.descripcion}</p>
-              </div>
+                {/* COLUMNA DERECHA */}
+                <div className={styles.sideColumn}>
+                  {/* PERSONAS INVOLUCRADAS */}
+                  <div className={styles.section}>
+                    <div className={styles.sectionHeading}>
+                      <Users size={20} />
 
-              <div className={styles.section}>
-                <div className={styles.sectionHeading}>
-                  <Link size={20} />
+                      <h4>Personas involucradas</h4>
+                    </div>
 
-                  <h4>Fuentes Consultadas</h4>
+                    <ul className={styles.peopleList}>
+                      {caseItem.involucrados.map(
+                        (persona, personIndex) => (
+                          <li
+                            key={`${persona}-${personIndex}`}
+                          >
+                            <span>
+                              {String(
+                                personIndex + 1
+                              ).padStart(2, "0")}
+                            </span>
+
+                            {persona}
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+
+                  {/* FUENTES CONSULTADAS */}
+                  <div className={styles.section}>
+                    <div className={styles.sectionHeading}>
+                      <Link size={20} />
+
+                      <h4>Fuentes Consultadas</h4>
+                    </div>
+
+                    <ul className={styles.sourceList}>
+                      {caseItem.fuentes.map(
+                        (fuente, sourceIndex) => (
+                          <li
+                            key={`${fuente.nombre}-${sourceIndex}`}
+                          >
+                            <span
+                              className={styles.sourceNumber}
+                            >
+                              {String(
+                                sourceIndex + 1
+                              ).padStart(2, "0")}
+                            </span>
+
+                            <a
+                              href={fuente.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {fuente.nombre}
+                            </a>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
                 </div>
-
-                <ul className={styles.peopleList}>
-                  {caseItem.involucrados.map(
-                    (persona, personIndex) => (
-                      <li key={`${persona}-${personIndex}`}>
-                        <span>
-                          {String(
-                            personIndex + 1
-                          ).padStart(2, "0")}
-                        </span>
-
-                        {persona}
-                      </li>
-                    )
-                  )}
-                </ul>
               </div>
 
+              {/* RESOLUCIÓN */}
               <div
                 className={`${styles.section} ${styles.resolution}`}
               >

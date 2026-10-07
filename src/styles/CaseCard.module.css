@@ -217,7 +217,7 @@
 .titleArea h3 {
   margin: 0;
 
-  max-width: 500px;
+  max-width: 650px;
 
   font-family: var(--font-title);
 
@@ -268,7 +268,7 @@
 .detailsInner {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
   gap: 20px;
 
@@ -278,12 +278,14 @@
   border-top: 1px solid var(--border);
 }
 
-.metadataGrid {
-  grid-column: 1 / -1;
+/* =========================================================
+   RESUMEN SUPERIOR
+========================================================= */
 
+.metadataGrid {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 12px;
 }
@@ -318,9 +320,11 @@
   color: var(--cyan);
 }
 
-.metadataCard div:last-child {
+.metadataCard > div:last-child {
   display: flex;
   flex-direction: column;
+
+  min-width: 0;
 
   gap: 3px;
 }
@@ -340,6 +344,37 @@
 
   color: #dce1ed;
 }
+
+/* =========================================================
+   DISTRIBUCIÓN PRINCIPAL
+========================================================= */
+
+.contentGrid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.85fr);
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+.sideColumn {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.descriptionSection {
+  height: 100%;
+}
+
+/* =========================================================
+   SECCIONES
+========================================================= */
 
 .section {
   padding: 20px;
@@ -381,6 +416,10 @@
   color: var(--text-secondary);
 }
 
+/* =========================================================
+   PERSONAS INVOLUCRADAS
+========================================================= */
+
 .peopleList {
   display: flex;
   flex-direction: column;
@@ -411,6 +450,8 @@
 }
 
 .peopleList li span {
+  flex-shrink: 0;
+
   color: var(--cyan);
 
   font-family: var(--font-title);
@@ -418,13 +459,93 @@
   font-size: 0.62rem;
 }
 
+/* =========================================================
+   FUENTES CONSULTADAS
+========================================================= */
+
+.sourceList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sourceList li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.sourceNumber {
+  flex-shrink: 0;
+
+  padding-top: 2px;
+
+  color: var(--cyan);
+
+  font-family: var(--font-title);
+
+  font-size: 0.62rem;
+}
+
+.sourceList a {
+  min-width: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.78rem;
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.sourceList a:hover {
+  color: var(--cyan);
+
+  text-decoration: underline;
+}
+
+.sourceList a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+
+  border-radius: 4px;
+}
+
+/* =========================================================
+   RESOLUCIÓN
+========================================================= */
+
 .resolution {
-  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .resolution .sectionHeading {
   color: var(--cyan);
 }
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 1000px) {
   .card {
@@ -448,7 +569,31 @@
   .inactive {
     opacity: 0.7;
   }
+
+  .contentGrid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.85fr);
+  }
 }
+
+/* =========================================================
+   TABLET PEQUEÑA / CELULAR
+========================================================= */
+
+@media (max-width: 800px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sideColumn {
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   CELULAR
+========================================================= */
 
 @media (max-width: 650px) {
   .card,
@@ -458,12 +603,6 @@
 
     opacity: 1;
   }
-
-  /*
-    En móvil ocultamos visualmente los casos no activos.
-    Siguen existiendo en React y pueden seleccionarse
-    con los botones del carrusel.
-  */
 
   .inactive {
     display: none;
@@ -478,8 +617,6 @@
   }
 
   .detailsInner {
-    grid-template-columns: 1fr;
-
     padding: 17px;
   }
 
@@ -487,8 +624,49 @@
     grid-template-columns: 1fr;
   }
 
-  .section,
-  .resolution {
-    grid-column: 1;
+  .section {
+    padding: 17px;
+  }
+
+  .sourceList a {
+    font-size: 0.76rem;
+  }
+}
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 480px) {
+  .imageWrapper {
+    min-height: 360px;
+  }
+
+  .expanded .imageWrapper {
+    min-height: 270px;
+  }
+
+  .titleArea {
+    left: 16px;
+    right: 16px;
+    bottom: 18px;
+  }
+
+  .titleArea h3 {
+    font-size: 1.4rem;
+  }
+
+  .topInformation {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .metadataCard {
+    padding: 13px;
   }
 }
