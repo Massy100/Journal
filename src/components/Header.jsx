@@ -76,7 +76,7 @@ function Header() {
           <ShieldCheck size={17} />
 
           <span>
-            Archivo educativo · Información verificable
+            Archivo educativo 
           </span>
         </div>
       </motion.div>

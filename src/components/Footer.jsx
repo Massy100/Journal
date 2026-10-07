@@ -41,13 +41,11 @@ function Footer() {
 
       <div className={styles.bottom}>
         <p>
-          © {currentYear} Journal Deepfake. Plantilla para
-          documentación e investigación.
+          © {currentYear} Journal Deepfake. 
         </p>
 
         <span>
-          La información deberá verificarse antes de su
-          publicación.
+          Métodos de Investigación Aplicada I
         </span>
       </div>
     </footer>
