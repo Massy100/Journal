@@ -670,3 +670,16 @@
     padding: 13px;
   }
 }
+
+.descriptionSection p,
+.resolution p {
+  hyphens: auto;
+  white-space: pre-line;
+}
+
+@media (min-width: 768px) {
+  .descriptionSection p,
+  .resolution p {
+    text-align: justify;
+  }
+}
