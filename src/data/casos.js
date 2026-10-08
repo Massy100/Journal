@@ -45,6 +45,7 @@ para conocer cuántos casos existen.
 ===========================================================
 */
 import caso1 from "../img/caso1.jpg";
+import caso2 from "../img/caso2.jpg";
 
 export const casos = [
   {
@@ -96,29 +97,29 @@ export const casos = [
 
     estado: "Documentado"
   },
-
   {
     id: "caso-2",
 
-    nombre: "Caso Placeholder 2",
+    nombre: "Profesor de Baltimore es arrestado por un presunto Deepfake",
 
-    imagen:
-      "https://placehold.co/1200x800/171229/bb8cff?text=Caso+Placeholder+2",
+    imagen: caso2,
 
-    fecha: "Fecha por definir",
+    fecha: "24 de Abril del 2024",
 
     involucrados: [
-      "Link pendiente - Pendiente",
-      "Link pendiente - Pendiente",
+      "Eric Eiswert - Director de Pikesville High School",
+      "Dazhon Darien - Profesor y director deportivo",
+      "Baltimore County Police Department - Policía del condado de Baltimore",
+      "https://www.bbc.com/news/world-us-canada-68907895",
     ],
 
     descripcion:
-      "Descripción pendiente de investigación. Este espacio está preparado para explicar el origen del contenido manipulado y los elementos relevantes para el análisis.",
+      "En abril de 2024, Dazhon Darien, un profesor y director deportivo de Pikesville High School, Maryland, fue arrestado por su presunta participación en la creación de un audio falso mediante inteligencia artificial. La grabación imitaba la voz del director Eric Eiswert e incluía comentarios racistas y antisemitas. El audio se difundió en redes sociales y provocó indignación en la comunidad educativa. Eiswert recibió amenazas y tuvo que afrontar las consecuencias de una grabación que, según el análisis forense, no era auténtica. Los investigadores sospecharon que Darien habría creado el contenido como represalia por una investigación laboral y financiera en su contra.",
 
     resolucion:
       "Resolución pendiente de investigación. Agregar aquí información sobre verificaciones, declaraciones oficiales o resultados obtenidos.",
 
-    estado: "Pendiente",
+    estado: "Investigado",
   },
 
   {
