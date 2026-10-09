@@ -47,6 +47,7 @@ para conocer cuántos casos existen.
 import caso1 from "../img/caso1.jpg";
 import caso4 from "../img/caso4.jpg";
 import caso2 from "../img/caso2.jpg";
+import caso3 from "../img/caso3.jpg";
 
 export const casos = [
   {
@@ -111,8 +112,13 @@ export const casos = [
       "Eric Eiswert - Director de Pikesville High School",
       "Dazhon Darien - Profesor y director deportivo",
       "Baltimore County Police Department - Policía del condado de Baltimore",
-      "https://www.bbc.com/news/world-us-canada-68907895",
     ],
+    
+    fuentes: [
+      {
+      nombre: "Baltimore high school teacher arrested over deepfake racist audio of principal",
+      url: "https://www.bbc.com/news/world-us-canada-68907895",
+    }],
 
     descripcion:
       "En abril de 2024, Dazhon Darien, un profesor y director deportivo de Pikesville High School, Maryland, fue arrestado por su presunta participación en la creación de un audio falso mediante inteligencia artificial. La grabación imitaba la voz del director Eric Eiswert e incluía comentarios racistas y antisemitas. El audio se difundió en redes sociales y provocó indignación en la comunidad educativa. Eiswert recibió amenazas y tuvo que afrontar las consecuencias de una grabación que, según el análisis forense, no era auténtica. Los investigadores sospecharon que Darien habría creado el contenido como represalia por una investigación laboral y financiera en su contra.",
@@ -126,26 +132,31 @@ export const casos = [
   {
     id: "caso-3",
 
-    nombre: "Caso Placeholder 3",
+    nombre: "Jail time for man who made deepfake images of schoolgirls",
 
-    imagen:
-      "https://placehold.co/1200x800/0c1b24/72f1cf?text=Caso+Placeholder+3",
+    imagen: caso3,
 
-    fecha: "Fecha por definir",
+    fecha: "2 de septiembre de 2026",
 
     involucrados: [
-      "Involucrado principal - Pendiente",
-      "Fuente del contenido - Pendiente",
+      "Involucrado principal - Antonio Rotondo",
+      "Fuente del contenido - Corte Distrital de Brisbane",
     ],
 
+    fuentes: [
+      {
+      nombre: "Jail time for man who made deepfake images of schoolgirls",
+      url: "https://www.brisbanetimes.com.au/national/queensland/jail-time-for-man-who-made-deepfake-images-of-schoolgirls-20260902-p60tuy.html"
+    }],
+
     descripcion:
-      "Descripción pendiente de investigación. Aquí podrá registrarse cómo se difundió el deepfake, las técnicas identificadas y la evidencia utilizada durante el análisis.",
+      "Antonio Rotondo, un hombre de 56 años, envió fotografías manipuladas de varias mujeres y niñas de edad escolar, incluida una adolescente de 13 años. Descargó fotografías públicas del staff y estudiantes de una reconocida escuela de Queensland; utilizando un programa de inteligencia artificial y deepfake, generó imagenes que incluían desnudos y sexualizaban a las víctimas, para posteriormente enviarlas a administradores de diferentes escuelas y eventos de moda en septiembre de 2023.",
 
     resolucion:
-      "Resolución pendiente. Documentar en esta sección qué ocurrió después de identificar el material como potencialmente manipulado.",
+      "Luego de un juicio de 6 días, Rotondo fue sentenciado a 2 años de prisión, condendao  por 11 cargos de acoso y 5 cargos por distribución de contenido de explotación sexual de menores. La Corte Distrital de Brisbane destacó que el acusado había mostrado un desprecio total por las víctimas y la sociedad, y que su comportamiento era inaceptable y dañino.",
 
-    estado: "Placeholder",
-  },
+    estado: "Finalizado",
+  }, 
 
   {
     id: "caso-4",
