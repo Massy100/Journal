@@ -124,7 +124,7 @@ export const casos = [
       "En abril de 2024, Dazhon Darien, un profesor y director deportivo de Pikesville High School, Maryland, fue arrestado por su presunta participación en la creación de un audio falso mediante inteligencia artificial. La grabación imitaba la voz del director Eric Eiswert e incluía comentarios racistas y antisemitas. El audio se difundió en redes sociales y provocó indignación en la comunidad educativa. Eiswert recibió amenazas y tuvo que afrontar las consecuencias de una grabación que, según el análisis forense, no era auténtica. Los investigadores sospecharon que Darien habría creado el contenido como represalia por una investigación laboral y financiera en su contra.",
 
     resolucion:
-      "Resolución pendiente de investigación. Agregar aquí información sobre verificaciones, declaraciones oficiales o resultados obtenidos.",
+      "El Sr. Darien quedó en libertado bajo fianza el jueves 23 de abril, con una fianza de $5,000.",
 
     estado: "Investigado",
   },
@@ -132,7 +132,7 @@ export const casos = [
   {
     id: "caso-3",
 
-    nombre: "Jail time for man who made deepfake images of schoolgirls",
+    nombre: "Hombre que realizó deepfakes sexuales de niñas de edad escolar es sentenciado a prisión",
 
     imagen: caso3,
 
