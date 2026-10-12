@@ -5,6 +5,8 @@ import {
   Scale,
   Users,
   Link,
+  History,
+  TriangleAlert,
 } from "lucide-react";
 
 import {
@@ -131,6 +133,19 @@ function CaseCard({
             }}
           >
             <div className={styles.detailsInner}>
+              {/* ANTECEDENTES */}
+              <div
+                className={`${styles.section} ${styles.antecedentes}`}
+              >
+                <div className={styles.sectionHeading}>
+                  <History size={20} />
+
+                  <h4>Antecedentes</h4>
+                </div>
+
+                <p>{caseItem.antecedentes}</p>
+              </div>
+
               {/* RESUMEN SUPERIOR */}
               <div className={styles.metadataGrid}>
                 <div className={styles.metadataCard}>
@@ -251,6 +266,19 @@ function CaseCard({
                 </div>
 
                 <p>{caseItem.resolucion}</p>
+              </div>
+
+              {/* CONSECUENCIAS */}
+              <div
+                className={`${styles.section} ${styles.consequences}`}
+              >
+                <div className={styles.sectionHeading}>
+                  <TriangleAlert size={20} />
+
+                  <h4>Consecuencias</h4>
+                </div>
+
+                <p>{caseItem.consecuencias}</p>
               </div>
             </div>
           </motion.div>

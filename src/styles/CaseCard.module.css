@@ -279,6 +279,31 @@
 }
 
 /* =========================================================
+   ANTECEDENTES
+========================================================= */
+
+.antecedentes {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(155, 124, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  border-color: rgba(155, 124, 255, 0.16);
+}
+
+.antecedentes .sectionHeading {
+  color: var(--violet);
+}
+
+.antecedentes p {
+  white-space: pre-line;
+}
+
+/* =========================================================
    RESUMEN SUPERIOR
 ========================================================= */
 
@@ -544,6 +569,31 @@
 }
 
 /* =========================================================
+   CONSECUENCIAS
+========================================================= */
+
+.consequences {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 185, 94, 0.045),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  border-color: rgba(255, 185, 94, 0.15);
+}
+
+.consequences .sectionHeading {
+  color: #ffb95e;
+}
+
+.consequences p {
+  white-space: pre-line;
+}
+
+/* =========================================================
    TABLET
 ========================================================= */
 
@@ -631,6 +681,11 @@
   .sourceList a {
     font-size: 0.76rem;
   }
+
+  .antecedentes,
+  .consequences {
+    width: 100%;
+  }
 }
 
 /* =========================================================
@@ -671,15 +726,23 @@
   }
 }
 
+/* =========================================================
+   TEXTO LARGO
+========================================================= */
+
 .descriptionSection p,
-.resolution p {
+.antecedentes p,
+.resolution p,
+.consequences p {
   hyphens: auto;
   white-space: pre-line;
 }
 
 @media (min-width: 768px) {
   .descriptionSection p,
-  .resolution p {
+  .antecedentes p,
+  .resolution p,
+  .consequences p {
     text-align: justify;
   }
 }

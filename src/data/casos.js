@@ -57,6 +57,11 @@ export const casos = [
 
     imagen: caso1,
 
+    antecedentes:
+      "Paris Hilton es una empresaria, cantante, actriz, DJ y figura mediática estadounidense cuya vida privada ha estado expuesta públicamente desde comienzos de los años 2000. En 2003, un video íntimo suyo fue difundido sin consentimiento y durante años fue tratado por buena parte de los medios y la cultura popular como un escándalo, en lugar de como una forma de explotación y violencia digital.\n\n" +
+
+      "El caso se desarrolla dentro de un contexto sociocultural en el que las mujeres han sido especialmente vulnerables a la sexualización, la exposición no consentida y el uso de su imagen como forma de humillación pública. Los deepfakes sexuales representan una extensión tecnológica de estas prácticas, ya que permiten fabricar contenido íntimo falso sin participación ni consentimiento de la persona afectada.",
+
     fecha: "22 de enero de 2026",
 
     involucrados: [
@@ -96,6 +101,16 @@ export const casos = [
     
     resolucion:
       "Paris Hilton apoyó públicamente la Ley DEFIANCE, una propuesta orientada a ofrecer herramientas legales a las víctimas de deepfakes sexuales creados o distribuidos sin consentimiento. El caso se convirtió en parte del debate sobre inteligencia artificial, consentimiento, privacidad y responsabilidad digital.",
+
+    consecuencias:
+    
+      "En el caso de Paris Hilton no existe un único responsable identificado y condenado a prisión por la creación o difusión de los deepfakes sexuales denunciados en 2026. Las imágenes falsas forman parte de un problema más amplio de contenido generado y distribuido en internet por múltiples actores, lo que dificulta atribuir responsabilidad penal a una sola persona.\n\n" +
+
+      "En cuanto al antecedente de 2003, Rick Salomon, expareja de Hilton y coprotagonista del video íntimo posteriormente comercializado como 1 Night in Paris, no recibió una condena de cárcel por ese hecho. El conflicto derivó principalmente en demandas civiles y acuerdos económicos. La demanda de privacidad presentada por Hilton fue desestimada y posteriormente se alcanzaron acuerdos relacionados con la distribución del material, pero no consta una sentencia penal de prisión contra Salomon por la difusión del video.\n\n" +
+
+      "Para Hilton, las consecuencias personales fueron prolongadas. Durante años explicó que la difusión del video afectó su reputación, su privacidad y la forma en que era percibida públicamente. Con el tiempo reconstruyó su carrera como empresaria, artista y figura mediática, formó una familia y convirtió parte de sus experiencias personales en activismo. En 2026 continuaba trabajando en proyectos empresariales, musicales y documentales, además de participar en campañas relacionadas con los derechos de las víctimas y la protección de menores.\n\n" +
+
+      "En el ámbito legislativo, la Ley DEFIANCE todavía no es una ley federal vigente. El proyecto S.1837 fue aprobado por el Senado de Estados Unidos el 13 de enero de 2026, pero hasta octubre de 2026 continúa pendiente de aprobación en la Cámara de Representantes y de la firma presidencial. Su objetivo es ampliar las herramientas civiles disponibles para que las víctimas de deepfakes sexuales no consentidos puedan demandar a quienes produzcan, distribuyan o gestionen este tipo de contenido en determinadas circunstancias.",
 
     estado: "Documentado"
   },
