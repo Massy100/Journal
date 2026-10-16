@@ -163,12 +163,17 @@ export const casos = [
       nombre: "Jail time for man who made deepfake images of schoolgirls",
       url: "https://www.brisbanetimes.com.au/national/queensland/jail-time-for-man-who-made-deepfake-images-of-schoolgirls-20260902-p60tuy.html"
     }],
+    antecedentes:
+      "En septiembre de 2023, Antonio Rotondo, ex desarrollador de software modificó imágenes de varias mujeres y niñas, descargadas del sitio de una escuela de Queensland, utilizando un programa de inteligencia artificial y deepfake, generando imágenes que incluían desnudos y sexualizaban a las víctimas. Posteriormente, envió estas imágenes a administradores de diferentes escuelas y eventos de moda.",
 
     descripcion:
       "Antonio Rotondo, un hombre de 56 años, envió fotografías manipuladas de varias mujeres y niñas de edad escolar, incluida una adolescente de 13 años. Descargó fotografías públicas del staff y estudiantes de una reconocida escuela de Queensland; utilizando un programa de inteligencia artificial y deepfake, generó imagenes que incluían desnudos y sexualizaban a las víctimas, para posteriormente enviarlas a administradores de diferentes escuelas y eventos de moda en septiembre de 2023.",
 
     resolucion:
       "Luego de un juicio de 6 días, Rotondo fue sentenciado a 2 años de prisión, condendao  por 11 cargos de acoso y 5 cargos por distribución de contenido de explotación sexual de menores. La Corte Distrital de Brisbane destacó que el acusado había mostrado un desprecio total por las víctimas y la sociedad, y que su comportamiento era inaceptable y dañino.",
+
+    consecuencias:
+    "Durante el juicio, las víctimas mencionaron que el hecho no solo las impactaba a ellos, sino que también a sus familias. Hablaron de como se sintieron humilladas y violadas en su privacidad.",
 
     estado: "Finalizado",
   }, 
