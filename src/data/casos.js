@@ -185,6 +185,13 @@ export const casos = [
 
     imagen: caso4,
 
+    antecedentes:
+      "Cuando estalló el caso, en enero de 2024, la inteligencia artificial generativa ya se había popularizado y existía una economía de pornografía deepfake que afectaba sobre todo a mujeres, famosas y anónimas. En Estados Unidos no había una ley federal específica que sancionara este tipo de contenido, y las reglas de las plataformas, como la política de \"medios sintéticos y manipulados\" de X, eran criticadas por su poca eficacia.\n\n" +
+
+      "Taylor Swift se encontraba en el punto más alto de su fama y, a lo largo de su carrera, había sido blanco de misoginia y de ataques que buscaban humillarla públicamente. Las imágenes no surgieron de la nada: según investigaciones periodísticas, nacieron en una comunidad de 4chan y en un grupo de Telegram cuyos miembros buscaban formas de burlar los filtros de herramientas como Microsoft Designer. Fue un ataque organizado y tratado como un \"reto\", no un hecho aislado.\n\n" +
+
+      "Aunque el caso se hizo famoso por tratarse de una celebridad, el problema ya existía para personas comunes: la mayoría de las víctimas de deepfakes sexuales son mujeres, y muchas no cuentan con los recursos, la fama ni la red de apoyo para exigir que el contenido sea eliminado.",
+
     fecha: "Enero de 2024",
 
     involucrados: [
@@ -202,6 +209,21 @@ export const casos = [
           "Wikipedia - Taylor Swift deepfake pornography controversy",
         url: "https://en.wikipedia.org/wiki/Taylor_Swift_deepfake_pornography_controversy",
       },
+      {
+        nombre:
+          "Senador Blackburn - NO FAKES Act avanza en el Comité Judicial del Senado (18 de junio de 2026)",
+        url: "https://www.blackburn.senate.gov/2026/6/blackburn-coons-bipartisan-bill-to-protect-individuals-and-creators-from-deepfakes-passes-senate-judiciary-committee",
+      },
+      {
+        nombre:
+          "Roll Call - Paris Hilton y legisladores piden a la Cámara aprobar la Ley DEFIANCE",
+        url: "https://rollcall.com/2026/01/22/paris-hilton-joins-house-advocates-behind-deepfakes-bill/",
+      },
+      {
+        nombre:
+          "Recording Academy - Estado de la Ley NO FAKES",
+        url: "https://www.grammy.com/advocacy/issues-policy/no-fakes-act/",
+      },
     ],
 
     descripcion:
@@ -214,9 +236,21 @@ export const casos = [
       "El caso mostró que las víctimas de deepfakes sexuales no son solo celebridades: la mayoría de los afectados son mujeres, y el alcance de Swift hizo que el problema recibiera una atención pública sin precedentes. En agosto de 2025 surgió una polémica similar cuando se reportó que la herramienta Grok Imagine generó contenido explícito de la artista a partir de una instrucción aparentemente inocente.",
 
     resolucion:
-      "Microsoft reforzó su generador de imágenes para evitar nuevos abusos, y X suspendió cuentas y bloqueó temporalmente las búsquedas del nombre de la artista. La Casa Blanca calificó los hechos de \"alarmantes\" y pidió que las plataformas y el Congreso tomaran medidas.\n\n" +
+      "Microsoft reforzó su generador de imágenes para evitar nuevos abusos, y X suspendió cuentas y bloqueó temporalmente las búsquedas del nombre de la artista. La Casa Blanca calificó los hechos de \"alarmantes\" y pidió medidas a las plataformas y al Congreso. El caso impulsó el debate sobre leyes como la DEFIANCE, la No AI FRAUD y la NO FAKES, un impacto conocido como el \"Efecto Taylor Swift\".",
 
-      "El caso impulsó el debate legislativo en Estados Unidos: se presentó un proyecto bipartidista que permitiría a las víctimas demandar a quienes creen o distribuyan falsificaciones digitales sin consentimiento, y cobraron relevancia propuestas como la No AI FRAUD Act y la NO FAKES Act, orientadas a proteger la voz y la imagen de las personas frente a réplicas digitales no autorizadas. La Unión Europea también alcanzó en febrero de 2024 un acuerdo para penalizar la pornografía deepfake. Este impacto se conoce como el \"Efecto Taylor Swift\".",
+    consecuencias:
+      "Sobre los responsables: hasta donde se ha informado públicamente, no hubo detenciones ni condenas contra quienes crearon o difundieron las imágenes. Se identificó su origen en comunidades en línea, pero no a personas concretas que enfrentaran un juicio. Una fuente cercana a Swift dijo que se evaluaban acciones legales, pero no se ha reportado una demanda pública.\n\n" +
+
+      "Sobre las plataformas: las imágenes se siguieron compartiendo en otras redes como Instagram y Reddit pese a las suspensiones de cuentas. X bloqueó las búsquedas del nombre de la artista del 27 al 29 de enero de 2024. En agosto de 2025 se reportó una polémica parecida con la herramienta Grok Imagine, lo que muestra que el problema no quedó resuelto.\n\n" +
+
+      "Sobre las leyes (estado a octubre de 2026): " +
+      "(1) La Ley DEFIANCE, presentada en enero de 2024, permitiría a las víctimas demandar civilmente. El Senado la aprobó por unanimidad en 2024 y otra vez el 13 de enero de 2026, pero la Cámara de Representantes todavía no la vota, por lo que aún NO es ley. " +
+      "(2) La No AI FRAUD Act, presentada en la Cámara en enero de 2024, no llegó a aprobarse. " +
+      "(3) La Ley NO FAKES, que protege la voz e imagen frente a réplicas digitales no autorizadas, fue reintroducida el 20 de mayo de 2026 y avanzó por unanimidad en el Comité Judicial del Senado el 18 de junio de 2026, pero el 30 de septiembre de 2026 el senador Ted Cruz bloqueó su aprobación rápida en el pleno. Sigue en proceso. " +
+      "(4) La Ley TAKE IT DOWN, que tipifica como delito federal publicar imágenes íntimas no consentidas, incluidas las generadas con IA, fue aprobada en 2025 y ya está vigente. " +
+      "Además, la Unión Europea acordó en febrero de 2024 penalizar la pornografía deepfake, con aplicación prevista para mediados de 2027.\n\n" +
+
+      "Sobre las víctimas y el legado: Swift convirtió, sin proponérselo, un problema invisible en un tema de agenda pública. Su caso se sigue citando en el Congreso: el senador Chris Coons mencionó su nombre al defender la Ley NO FAKES, junto al de una estudiante de secundaria, para recordar que la protección debe alcanzar a todas las personas. Para las víctimas comunes, en cambio, la ayuda legal sigue siendo limitada mientras la Ley DEFIANCE no se apruebe en la Cámara.",
 
     estado: "Documentado",
   },
