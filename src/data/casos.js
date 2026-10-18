@@ -121,6 +121,8 @@ export const casos = [
 
     imagen: caso2,
 
+    antecedentes:"En enero de 2024, en una escuela secundaria de Maryland, Estados Unidos, se difundió una grabación que parecía mostrar al director Eric Eiswert haciendo comentarios racistas y antisemitas. Sin embargo, las investigaciones determinaron que el audio había sido creado mediante inteligencia artificial para imitar su voz. El caso estuvo relacionado con un conflicto laboral dentro de la institución",
+
     fecha: "24 de Abril del 2024",
 
     involucrados: [
@@ -139,8 +141,16 @@ export const casos = [
       "En abril de 2024, Dazhon Darien, un profesor y director deportivo de Pikesville High School, Maryland, fue arrestado por su presunta participación en la creación de un audio falso mediante inteligencia artificial. La grabación imitaba la voz del director Eric Eiswert e incluía comentarios racistas y antisemitas. El audio se difundió en redes sociales y provocó indignación en la comunidad educativa. Eiswert recibió amenazas y tuvo que afrontar las consecuencias de una grabación que, según el análisis forense, no era auténtica. Los investigadores sospecharon que Darien habría creado el contenido como represalia por una investigación laboral y financiera en su contra.",
 
     resolucion:
-      "El Sr. Darien quedó en libertado bajo fianza el jueves 23 de abril, con una fianza de $5,000.",
+      "Las autoridades investigaron el origen de la grabación y determinaron que había sido manipulada mediante inteligencia artificial. Para prevenir casos similares, es importante verificar la autenticidad de los audios antes de compartirlos, utilizar herramientas de análisis digital y establecer protocolos de investigación dentro de las instituciones.",
 
+    consecuencias:
+    "- Daño a la reputación: el director fue acusado injustamente de realizar comentarios discriminatorio.\n" +
+    "- Amenazas: él y su familia recibieron amenazas.\n" +
+    "- Conflictos escolares: el incidente generó preocupación entre estudiantes, padres y docentes.\n" +
+    "- Consecuencias legales: el empleado señalado como responsable fue arrestado y acusado de varios delitos.\n" +
+    "- Riesgos tecnológicos: el caso evidenció cómo la inteligencia artificial puede utilizarse para difundir información falsa.\n"
+    ,
+    
     estado: "Investigado",
   },
 
