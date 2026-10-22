@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import CaseCarousel from "./components/CaseCarousel";
 import Footer from "./components/Footer";
+import SurveyAnalysis from "./components/SurveyAnalysis";
 
 import { casos } from "./data/casos";
 
@@ -10,7 +11,10 @@ function App() {
   return (
     <div className={styles.app}>
       {/* Decoración ambiental del fondo */}
-      <div className={styles.backgroundEffects} aria-hidden="true">
+      <div
+        className={styles.backgroundEffects}
+        aria-hidden="true"
+      >
         <div className={styles.glowOne}></div>
         <div className={styles.glowTwo}></div>
         <div className={styles.grid}></div>
@@ -19,6 +23,7 @@ function App() {
       <Header />
 
       <main className={styles.main}>
+        {/* CASOS DOCUMENTADOS */}
         <section
           className={styles.introduction}
           aria-labelledby="cases-heading"
@@ -33,9 +38,10 @@ function App() {
             </h2>
 
             <p>
-              Selecciona un expediente para explorar la información
-              recopilada, las personas involucradas y la resolución
-              documentada del incidente.
+              Selecciona un expediente para explorar la
+              información recopilada, las personas
+              involucradas y la resolución documentada
+              del incidente.
             </p>
           </div>
 
@@ -46,6 +52,9 @@ function App() {
         </section>
 
         <CaseCarousel cases={casos} />
+
+        {/* ANÁLISIS DESCRIPTIVO DE LA ENCUESTA */}
+        <SurveyAnalysis />
       </main>
 
       <Footer />

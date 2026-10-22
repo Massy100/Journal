@@ -1,0 +1,927 @@
+.analysis {
+  width: 100%;
+
+  padding-top: 110px;
+}
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.analysisHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.analysisHeader > div:first-child {
+  max-width: 760px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 13px;
+
+  color: var(--cyan);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+}
+
+.analysisHeader h2 {
+  margin: 0;
+
+  font-family: var(--font-title);
+
+  font-size: clamp(
+    2.3rem,
+    5vw,
+    4.5rem
+  );
+
+  letter-spacing: -0.055em;
+
+  line-height: 1;
+}
+
+.analysisHeader p {
+  max-width: 680px;
+
+  margin: 18px 0 0;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}
+
+.surveyMetadata {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.surveyMetadata > div {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  border: 1px solid var(--border);
+  border-radius: 11px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  color: var(--text-secondary);
+
+  font-size: 0.74rem;
+}
+
+.surveyMetadata svg {
+  color: var(--cyan);
+}
+
+.surveyMetadata span {
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+}
+
+.surveyMetadata strong {
+  color: white;
+
+  font-family: var(--font-title);
+
+  font-size: 1rem;
+}
+
+/* =========================================================
+   NOTA METODOLÓGICA
+========================================================= */
+
+.methodologyNote {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 22px;
+
+  padding: 15px 18px;
+
+  border-left:
+    2px solid var(--violet);
+
+  border-radius: 0 10px 10px 0;
+
+  background:
+    rgba(155, 124, 255, 0.055);
+}
+
+.methodologyNote > span {
+  flex-shrink: 0;
+
+  color: var(--violet);
+
+  font-size: 0.63rem;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.methodologyNote p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.76rem;
+
+  line-height: 1.6;
+}
+
+.methodologyNote strong {
+  color: #dce1ed;
+}
+
+/* =========================================================
+   KPIs
+========================================================= */
+
+.statsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.statCard {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.statCard::before {
+  content: "";
+
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  top: -65px;
+  right: -65px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(120, 243, 255, 0.09);
+
+  filter: blur(25px);
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(120, 243, 255, 0.22);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0, 0, 0, 0.25);
+}
+
+.statValue {
+  font-family: var(--font-title);
+
+  font-size: clamp(
+    2.2rem,
+    4vw,
+    3.5rem
+  );
+
+  font-weight: 700;
+
+  letter-spacing: -0.06em;
+
+  color: var(--cyan);
+}
+
+.statValue span {
+  margin-left: 3px;
+
+  font-size: 0.55em;
+
+  color: var(--violet);
+}
+
+.statCard h3 {
+  margin: 9px 0 7px;
+
+  font-family: var(--font-title);
+
+  font-size: 0.92rem;
+}
+
+.statCard p {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.72rem;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   ENCABEZADO PREGUNTAS
+========================================================= */
+
+.questionsHeader {
+  margin:
+    85px 0 28px;
+
+  text-align: center;
+}
+
+.questionsHeader > span {
+  color: var(--cyan);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+}
+
+.questionsHeader h3 {
+  margin:
+    10px 0 8px;
+
+  font-family: var(--font-title);
+
+  font-size: clamp(
+    1.8rem,
+    4vw,
+    2.8rem
+  );
+
+  letter-spacing: -0.04em;
+}
+
+.questionsHeader p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.83rem;
+}
+
+/* =========================================================
+   GRID DE PREGUNTAS
+========================================================= */
+
+.questionsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.questionCard {
+  min-width: 0;
+
+  padding: 23px;
+
+  border: 1px solid var(--border);
+  border-radius: 21px;
+
+  background:
+    rgba(10, 13, 22, 0.72);
+
+  backdrop-filter:
+    blur(18px);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.questionCard:hover {
+  border-color:
+    rgba(155, 124, 255, 0.2);
+
+  box-shadow:
+    0 24px 60px
+    rgba(0, 0, 0, 0.2);
+}
+
+.questionWide {
+  grid-column: 1 / -1;
+}
+
+.questionHeader {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 13px;
+
+  min-height: 65px;
+}
+
+.questionNumber {
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border:
+    1px solid rgba(
+      120,
+      243,
+      255,
+      0.2
+    );
+
+  border-radius: 10px;
+
+  background:
+    rgba(
+      120,
+      243,
+      255,
+      0.06
+    );
+
+  color: var(--cyan);
+
+  font-family:
+    var(--font-title);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.questionHeader h3 {
+  margin: 4px 0 0;
+
+  max-width: 650px;
+
+  font-family:
+    var(--font-title);
+
+  font-size: 0.94rem;
+
+  line-height: 1.45;
+
+  color: #e5e8f1;
+}
+
+/* =========================================================
+   CHART
+========================================================= */
+
+.chartArea {
+  position: relative;
+
+  margin-top: 15px;
+}
+
+.donutWrapper {
+  position: relative;
+}
+
+.donutCenter {
+  position: absolute;
+
+  left: 50%;
+  top: 145px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  transform:
+    translate(-50%, -50%);
+
+  pointer-events: none;
+}
+
+.donutCenter strong {
+  font-family:
+    var(--font-title);
+
+  font-size: 1.65rem;
+
+  color: #ffffff;
+}
+
+.donutCenter span {
+  margin-top: 2px;
+
+  font-size: 0.58rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
+
+  color: var(--text-muted);
+}
+
+.chartTooltip {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  padding: 10px 12px;
+
+  border:
+    1px solid var(--border);
+  border-radius: 9px;
+
+  background:
+    rgba(6, 8, 15, 0.95);
+
+  box-shadow:
+    0 12px 30px
+    rgba(0, 0, 0, 0.35);
+}
+
+.chartTooltip strong {
+  color: white;
+
+  font-size: 0.72rem;
+}
+
+.chartTooltip span {
+  color:
+    var(--text-secondary);
+
+  font-size: 0.67rem;
+}
+
+/* =========================================================
+   LEYENDA
+========================================================= */
+
+.chartLegend {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 8px 10px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.025
+    );
+}
+
+.legendColor {
+  flex-shrink: 0;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 9px
+    currentColor;
+}
+
+.legendItem > div {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  gap: 2px;
+}
+
+.legendItem span {
+  color:
+    var(--text-secondary);
+
+  font-size: 0.67rem;
+}
+
+.legendItem strong {
+  color: #e4e7f0;
+
+  font-size: 0.67rem;
+}
+
+/* =========================================================
+   ANÁLISIS POR PREGUNTA
+========================================================= */
+
+.analysisText {
+  margin-top: 20px;
+
+  padding-top: 17px;
+
+  border-top:
+    1px solid var(--border);
+}
+
+.analysisText > span {
+  color: var(--violet);
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.analysisText p {
+  margin: 8px 0 0;
+
+  color:
+    var(--text-secondary);
+
+  font-size: 0.76rem;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   RESUMEN FINAL
+========================================================= */
+
+.summary {
+  margin-top: 80px;
+
+  padding: 32px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 25px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(
+        120,
+        243,
+        255,
+        0.07
+      ),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(
+        155,
+        124,
+        255,
+        0.06
+      ),
+      transparent 30%
+    ),
+    rgba(
+      255,
+      255,
+      255,
+      0.018
+    );
+}
+
+.summaryHeader {
+  max-width: 700px;
+
+  margin-bottom: 28px;
+}
+
+.summaryHeader > span {
+  color: var(--cyan);
+
+  font-size: 0.63rem;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+}
+
+.summaryHeader h3 {
+  margin:
+    9px 0 8px;
+
+  font-family:
+    var(--font-title);
+
+  font-size: 2rem;
+
+  letter-spacing: -0.04em;
+}
+
+.summaryHeader p {
+  margin: 0;
+
+  color:
+    var(--text-secondary);
+
+  font-size: 0.8rem;
+
+  line-height: 1.6;
+}
+
+.summaryGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 13px;
+}
+
+.finding {
+  display: flex;
+
+  gap: 14px;
+
+  padding: 17px;
+
+  border:
+    1px solid var(--border);
+  border-radius: 14px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.02
+    );
+}
+
+.findingIcon {
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+
+  background:
+    var(--cyan-soft);
+
+  color: var(--cyan);
+}
+
+.finding h4 {
+  margin: 2px 0 6px;
+
+  font-family:
+    var(--font-title);
+
+  font-size: 0.83rem;
+}
+
+.finding p {
+  margin: 0;
+
+  color:
+    var(--text-secondary);
+
+  font-size: 0.72rem;
+
+  line-height: 1.65;
+}
+
+.summaryConclusion {
+  margin-top: 20px;
+
+  padding: 21px;
+
+  border-left:
+    2px solid var(--violet);
+
+  border-radius:
+    0 13px 13px 0;
+
+  background:
+    rgba(
+      155,
+      124,
+      255,
+      0.05
+    );
+}
+
+.summaryConclusion span {
+  color: var(--violet);
+
+  font-size: 0.61rem;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.summaryConclusion p {
+  margin: 9px 0 0;
+
+  color:
+    var(--text-secondary);
+
+  font-size: 0.78rem;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .statsGrid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+}
+
+/* =========================================================
+   TABLET PEQUEÑA
+========================================================= */
+
+@media (max-width: 800px) {
+  .analysis {
+    padding-top: 85px;
+  }
+
+  .analysisHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .surveyMetadata {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .questionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .questionWide {
+    grid-column: auto;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+  .analysis {
+    padding-top: 70px;
+  }
+
+  .analysisHeader h2 {
+    font-size: 2.6rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .statCard {
+    padding: 17px;
+  }
+
+  .statValue {
+    font-size: 2.25rem;
+  }
+
+  .statCard h3 {
+    font-size: 0.78rem;
+  }
+
+  .statCard p {
+    font-size: 0.66rem;
+  }
+
+  .questionCard {
+    padding: 17px;
+  }
+
+  .chartLegend {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    padding: 21px;
+  }
+
+  .methodologyNote {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 7px;
+  }
+}
+
+/* =========================================================
+   CELULAR PEQUEÑO
+========================================================= */
+
+@media (max-width: 430px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .surveyMetadata {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .surveyMetadata > div {
+    width: 100%;
+  }
+
+  .questionHeader h3 {
+    font-size: 0.85rem;
+  }
+}
